@@ -1,0 +1,119 @@
+<!DOCTYPE html> <!-- Sayfanın HTML5 formatında olduğunu belirtir -->
+<html lang="tr"> <!-- Sayfanın dilinin Türkçe olduğunu belirtir -->
+<head>
+    <meta charset="UTF-8"> <!-- Sayfanın karakter setini UTF-8 olarak belirtir, Türkçe karakterler için önemlidir -->
+    <title>Mağazalar</title> <!-- Sayfa başlığını "Mağazalar" olarak ayarlar -->
+    <style>
+        body { 
+            font-family: Arial, sans-serif; /* Sayfa genelinde Arial yazı tipini kullanır */
+            background-color: #f5f5f5; /* Sayfanın arka plan rengini açık gri yapar */
+            color: #333; /* Yazı rengini koyu gri yapar */
+            margin: 0; /* Sayfa kenarındaki dış boşluğu sıfırlar */
+            padding: 0; /* Sayfa içindeki boşlukları sıfırlar */
+        }
+        header { 
+            background-color: #000; /* Başlık kısmının arka plan rengini siyah yapar */
+            color: white; /* Başlık kısmındaki yazı rengini beyaz yapar */
+            padding: 15px; /* Başlık kısmına iç boşluk ekler */
+            text-align: center; /* Başlık metnini ortalar */
+        }
+        nav { 
+            background-color: #222; /* Navigasyon çubuğunun arka plan rengini koyu gri yapar */
+            padding: 10px; /* Navigasyon çubuğuna iç boşluk ekler */
+            text-align: center; /* Navigasyon linklerini ortalar */
+        }
+        nav a { 
+            color: white; /* Navigasyon linklerinin rengini beyaz yapar */
+            text-decoration: none; /* Linklerin altını çizmez */
+            margin: 0 15px; /* Linkler arasına 15px boşluk bırakır */
+            font-weight: bold; /* Link metinlerini kalın yapar */
+        }
+        nav a:hover { 
+            text-decoration: underline; /* Linklere fare ile gelindiğinde altını çizer */
+            color: #f2f2f2; /* Linklerin rengini açık beyaz yapar */
+        }
+        main { 
+            padding: 20px; /* Ana içerik kısmına iç boşluk ekler */
+        }
+        ul { 
+            list-style-type: none; /* Liste elemanlarının başındaki madde işaretlerini kaldırır */
+            padding: 0; /* Liste elemanlarının iç boşluğunu sıfırlar */
+        }
+        li { 
+            margin: 10px 0; /* Liste elemanları arasına 10px boşluk bırakır */
+            font-size: 16px; /* Liste elemanlarının yazı boyutunu 16px yapar */
+        }
+        a { 
+            text-decoration: none; /* Bağlantıların altını çizmez */
+            color: #333; /* Bağlantıların rengini koyu gri yapar */
+            font-weight: bold; /* Bağlantı metinlerini kalın yapar */
+        }
+        a:hover { 
+            color: #000; /* Bağlantıya fare ile gelindiğinde rengini siyah yapar */
+        }
+        .konum { 
+            font-style: italic; /* Konum yazılarının italik olmasını sağlar */
+            color: #666; /* Konum yazılarının rengini gri yapar */
+            font-size: 14px; /* Konum yazılarının boyutunu 14px yapar */
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Mağazalarımız</h1></header> <!-- Sayfanın başlığı, mağazalar hakkında bilgi verir -->
+    <nav>
+        <a href="index.html">Anasayfa</a> <!-- Anasayfa linki -->
+        <a href="hakkimizda.html">Hakkımızda</a> <!-- Hakkımızda sayfasına yönlendiren link -->
+        <a href="urunler.html">Ürünler</a> <!-- Ürünler sayfasına yönlendiren link -->
+        <a href="kampanyalar.html">Kampanyalar</a> <!-- Kampanyalar sayfasına yönlendiren link -->
+        <a href="magazalar.html">Mağazalar</a> <!-- Bu sayfa, mağazalar sayfasına yönlendirir -->
+        <a href="iletisim.html">İletişim</a> <!-- İletişim sayfasına yönlendiren link -->
+    </nav>
+    <main>
+        <h2>Mağazalarımızın Konumları</h2> <!-- Sayfanın ana başlığı -->
+        <p>Türkiye'deki ZARA mağazalarımıza aşağıdaki bağlantılardan ulaşabilirsiniz:</p> <!-- Açıklama metni -->
+        <ul>
+            <!-- ZARA mağazalarının bağlantıları ve adres bilgileri -->
+            <li>
+                <a href="https://www.zara.com/tr/tr/ma%C4%9Faza-istanbul" target="_blank">İstanbul - ZARA Mağazası</a><br> <!-- İstanbul mağazası linki -->
+                <span class="konum">Adres: Nispetiye Mahallesi, Aytar Caddesi, MM Plaza, Levent/Beşiktaş</span> <!-- İstanbul mağazasının adresi -->
+            </li>
+            <li>
+                <a href="https://www.zara.com/tr/tr/ma%C4%9Faza-ankara" target="_blank">Ankara - ZARA Mağazası</a><br> <!-- Ankara mağazası linki -->
+                <span class="konum">Adres: Kocatepe Mahallesi, Tunali Hilmi Caddesi, Kızılay</span> <!-- Ankara mağazasının adresi -->
+            </li>
+            <li>
+                <a href="https://www.zara.com/tr/tr/ma%C4%9Faza-izmir" target="_blank">İzmir - ZARA Mağazası</a><br> <!-- İzmir mağazası linki -->
+                <span class="konum">Adres: Alsancak Mahallesi, Gazi Bulvarı, İzmir</span> <!-- İzmir mağazasının adresi -->
+            </li>
+            <li>
+                <a href="https://www.zara.com/tr/tr/ma%C4%9Faza-antalya" target="_blank">Antalya - ZARA Mağazası</a><br> <!-- Antalya mağazası linki -->
+                <span class="konum">Adres: Lara Caddesi, Antalya</span> <!-- Antalya mağazasının adresi -->
+            </li>
+            <li>
+                <a href="https://www.zara.com/tr/tr/ma%C4%9Faza-bursa" target="_blank">Bursa - ZARA Mağazası</a><br> <!-- Bursa mağazası linki -->
+                <span class="konum">Adres: İhsaniye Mahallesi, Bursa Çarşı Caddesi</span> <!-- Bursa mağazasının adresi -->
+            </li>
+            <li>
+                <a href="https://www.zara.com/tr/tr/ma%C4%9Faza-adana" target="_blank">Adana - ZARA Mağazası</a><br> <!-- Adana mağazası linki -->
+                <span class="konum">Adres: Zeytinli Mahallesi, Atatürk Caddesi</span> <!-- Adana mağazasının adresi -->
+            </li>
+            <li>
+                <a href="https://www.zara.com/tr/tr/ma%C4%9Faza-konya" target="_blank">Konya - ZARA Mağazası</a><br> <!-- Konya mağazası linki -->
+                <span class="konum">Adres: Şehir Merkezi, Alaaddin Caddesi, Konya</span> <!-- Konya mağazasının adresi -->
+            </li>
+            <li>
+                <a href="https://www.zara.com/tr/tr/ma%C4%9Faza-kocaeli" target="_blank">Kocaeli - ZARA Mağazası</a><br> <!-- Kocaeli mağazası linki -->
+                <span class="konum">Adres: Yenişehir Mahallesi, İzmit Caddesi, Kocaeli</span> <!-- Kocaeli mağazasının adresi -->
+            </li>
+            <li>
+                <a href="https://www.zara.com/tr/tr/ma%C4%9Faza-eskisehir" target="_blank">Eskişehir - ZARA Mağazası</a><br> <!-- Eskişehir mağazası linki -->
+                <span class="konum">Adres: Porsuk Mahallesi, Cumhuriyet Caddesi</span> <!-- Eskişehir mağazasının adresi -->
+            </li>
+            <li>
+                <a href="https://www.zara.com/tr/tr/ma%C4%9Faza-samsun" target="_blank">Samsun - ZARA Mağazası</a><br> <!-- Samsun mağazası linki -->
+                <span class="konum">Adres: İlkadım Mahallesi, Atatürk Caddesi, Samsun</span> <!-- Samsun mağazasının adresi -->
+            </li>
+        </ul>
+    </main>
+</body>
+</html>

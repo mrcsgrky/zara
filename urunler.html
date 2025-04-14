@@ -1,0 +1,224 @@
+<!DOCTYPE html> <!-- Sayfanın HTML5 formatında olduğunu belirtir -->
+<html lang="tr"> <!-- Sayfanın dilinin Türkçe olduğunu belirtir -->
+<head>
+    <meta charset="UTF-8"> <!-- Sayfanın karakter setini UTF-8 olarak belirtir -->
+    <title>Ürünler</title> <!-- Sayfa başlığını "Ürünler" olarak ayarlar -->
+    <style>
+        body { 
+            font-family: Arial, sans-serif; /* Sayfa genelinde Arial yazı tipini kullanır */
+            background-color: #f5f5f5; /* Sayfanın arka plan rengini açık gri yapar */
+            color: #333; /* Yazı rengini koyu gri yapar */
+            margin: 0; /* Sayfa kenarındaki dış boşluğu sıfırlar */
+            padding: 0; /* Sayfa içindeki boşlukları sıfırlar */
+        }
+
+        header { 
+            background-color: #000; /* Başlık kısmının arka plan rengini siyah yapar */
+            color: white; /* Başlık kısmındaki yazı rengini beyaz yapar */
+            padding: 15px; /* Başlık kısmına iç boşluk ekler */
+            text-align: center; /* Başlık metnini ortalar */
+        }
+
+        nav { 
+            background-color: #222; /* Navigasyon çubuğunun arka plan rengini koyu gri yapar */
+            padding: 10px; /* Navigasyon çubuğuna iç boşluk ekler */
+            text-align: center; /* Navigasyon linklerini ortalar */
+        }
+
+        nav a { 
+            color: white; /* Navigasyon linklerinin rengini beyaz yapar */
+            text-decoration: none; /* Linklerin altını çizmez */
+            margin: 0 15px; /* Linkler arasına 15px boşluk bırakır */
+            font-weight: bold; /* Link metinlerini kalın yapar */
+        }
+
+        nav a:hover { 
+            text-decoration: underline; /* Linklere fare ile gelindiğinde altını çizer */
+            color: #f2f2f2; /* Linklerin rengini açık beyaz yapar */
+        }
+
+        main { 
+            padding: 20px; /* Ana içerik kısmına iç boşluk ekler */
+            text-align: center; /* İçeriği ortalar */
+        }
+
+        table { 
+            width: 100%; /* Tabloyu sayfa genişliği kadar yapar */
+            border-collapse: collapse; /* Tablo kenarlıklarını birleştirir */
+            background-color: white; /* Tablo arka planını beyaz yapar */
+        }
+
+        table th, table td { 
+            border: 1px solid #ccc; /* Tablo hücrelerine gri kenarlık ekler */
+            padding: 10px; /* Hücrelere iç boşluk ekler */
+            text-align: center; /* Hücre içeriğini ortalar */
+        }
+
+        img { 
+            width: 100%; /* Resim genişliği %100, ancak kutu sınırlı olacak */
+            max-width: 300px; /* Maksimum genişlik 300px, fotoğraflar bu boyutla sınırlı olacak */
+            height: auto; /* Resmin yüksekliği otomatik olarak ayarlanır */
+            border-radius: 8px; /* Resim köşelerini yuvarlar */
+            transition: transform 0.3s ease; /* Fotoğraf üzerine gelindiğinde büyüme efekti için geçiş ekler */
+        }
+
+        img:hover {
+            transform: scale(1.1); /* Üzerine gelindiğinde resmin büyümesini sağlar */
+        }
+
+        .product-container {
+            position: relative; /* Ürünleri içerik kutusunu yerleştirmek için konumlandırır */
+            overflow: hidden; /* Resmin taşmasını engeller */
+        }
+
+        .product-info {
+            position: absolute; /* Ürün bilgilerini kesin konumda yerleştirir */
+            bottom: -100%; /* Başlangıçta ürün bilgilerini kutunun dışında tutar */
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.6); /* Ürün bilgileri kutusunun arka planını yarı saydam siyah yapar */
+            color: white; /* Ürün bilgisi metnini beyaz yapar */
+            padding: 10px; /* Ürün bilgisi kutusuna iç boşluk ekler */
+            text-align: center; /* Ürün bilgisi metnini ortalar */
+            transition: bottom 0.3s ease-in-out; /* Ürün bilgisi kutusunun görünür hale gelme geçişini ekler */
+        }
+
+        .product-container:hover .product-info {
+            bottom: 0; /* Üzerine gelindiğinde ürün bilgisi kutusunun görünmesini sağlar */
+        }
+
+        .product-info h3, .product-info p {
+            margin: 5px 0; /* Ürün adı ve fiyatı arasına boşluk ekler */
+        }
+
+        /* Başlıkları kaldırmak için tablo başlıklarını gizler */
+        table th {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Ürünler</h1></header> <!-- Sayfanın başlığı "Ürünler" olarak belirlenmiştir -->
+    <nav>
+        <a href="index.html">Anasayfa</a> <!-- Anasayfa linki -->
+        <a href="hakkimizda.html">Hakkımızda</a> <!-- Hakkımızda sayfasına yönlendiren link -->
+        <a href="urunler.html">Ürünler</a> <!-- Bu sayfa, ürünler sayfasına yönlendirir -->
+        <a href="kampanyalar.html">Kampanyalar</a> <!-- Kampanyalar sayfasına yönlendiren link -->
+        <a href="magazalar.html">Mağazalar</a> <!-- Mağazalar sayfasına yönlendiren link -->
+        <a href="iletisim.html">İletişim</a> <!-- İletişim sayfasına yönlendiren link -->
+    </nav>
+    <main>
+        <table>
+            <!-- Ürünleri listelerken her ürün için ayrı bir satır oluşturulur -->
+            <tr>
+                <td>
+                    <div class="product-container">
+                        <img src="images/beyaztshirt.jpg" alt="Beyaz Tişört"> <!-- Beyaz Tişört ürün resmi -->
+                        <div class="product-info">
+                            <h3>Beyaz Tişört</h3> <!-- Ürün adı -->
+                            <p>299 TL</p> <!-- Ürün fiyatı -->
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-container">
+                        <img src="images/blazer.jpg" alt="Blazer Ceket"> <!-- Blazer Ceket ürün resmi -->
+                        <div class="product-info">
+                            <h3>Blazer Ceket</h3> <!-- Ürün adı -->
+                            <p>599 TL</p> <!-- Ürün fiyatı -->
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-container">
+                        <img src="images/mavikot.jpg" alt="Mavi Kot Pantolon"> <!-- Mavi Kot Pantolon ürün resmi -->
+                        <div class="product-info">
+                            <h3>Mavi Kot Pantolon</h3> <!-- Ürün adı -->
+                            <p>449 TL</p> <!-- Ürün fiyatı -->
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-container">
+                        <img src="images/bejt.jpg" alt="Bej Trençkot"> <!-- Bej Trençkot ürün resmi -->
+                        <div class="product-info">
+                            <h3>Bej Trençkot</h3> <!-- Ürün adı -->
+                            <p>899 TL</p> <!-- Ürün fiyatı -->
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-container">
+                        <img src="images/sisme.jpg" alt="Şişme Mont"> <!-- Şişme Mont ürün resmi -->
+                        <div class="product-info">
+                            <h3>Şişme Mont</h3> <!-- Ürün adı -->
+                            <p>1.290 TL</p> <!-- Ürün fiyatı -->
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-container">
+                        <img src="images/midietek.jpg" alt="Midi Etek"> <!-- Midi Etek ürün resmi -->
+                        <div class="product-info">
+                            <h3>Midi Etek</h3> <!-- Ürün adı -->
+                            <p>650 TL</p> <!-- Ürün fiyatı -->
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-container">
+                        <img src="images/ybelpantolon.jpg" alt="Yüksek Bel Pantolon"> <!-- Yüksek Bel Pantolon ürün resmi -->
+                        <div class="product-info">
+                            <h3>Yüksek Bel Pantolon</h3> <!-- Ürün adı -->
+                            <p>790 TL</p> <!-- Ürün fiyatı -->
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-container">
+                        <img src="images/cizgiligomlek.jpg" alt="Çizgili Gömlek"> <!-- Çizgili Gömlek ürün resmi -->
+                        <div class="product-info">
+                            <h3>Çizgili Gömlek</h3> <!-- Ürün adı -->
+                            <p>760 TL</p> <!-- Ürün fiyatı -->
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-container">
+                        <img src="images/sortetek.jpg" alt="Şort Etek"> <!-- Şort Etek ürün resmi -->
+                        <div class="product-info">
+                            <h3>Şort Etek</h3> <!-- Ürün adı -->
+                            <p>650 TL</p> <!-- Ürün fiyatı -->
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-container">
+                        <img src="images/sal.jpg" alt="Şal"> <!-- Şal ürün resmi -->
+                        <div class="product-info">
+                            <h3>Şal</h3> <!-- Ürün adı -->
+                            <p>190 TL</p> <!-- Ürün fiyatı -->
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+   
