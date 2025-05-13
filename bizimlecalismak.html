@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bizimle Çalışmak İster misiniz? - Zara</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="bizimlecalismak_header">
+    <h1>Bizimle Çalışmak İster Misiniz?</h1>
+  </header>
+
+  <nav class="bizimlecalismak_nav">
+    <a href="index.html">Anasayfa</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="kampanyalar.html">Kampanyalar</a>
+    <a href="magazalar.html">Mağazalar</a>
+    <a href="iletisim.html">İletişim</a>
+    <a href="memnuniyet.html">Memnuniyet</a>
+    <a href="canlidestek.html">Canlı Destek</a>
+    <a href="bizimlecalismak.html">Bizimle Çalışmak</a>
+    <a href="erkek.html">Erkek</a>
+    <a href="kadin.html">Kadın</a>
+  </nav>
+
+  <main class="bizimlecalismak_main">
+    <div class="bizimlecalismak_container">
+      <h2>Bizimle Çalışmak İster misiniz?</h2>
+      <p>Zara ailesine katılmak ister misiniz? Aşağıdaki formu doldurarak başvurunuzu bize iletebilirsiniz.</p>
+
+      <form action="basvuru.php" method="POST">
+        <label for="name">Ad Soyad:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="position">Pozisyon:</label>
+        <select id="position" name="position">
+          <option value="magaza">Mağaza Personeli</option>
+          <option value="depo">Depo Elemanı</option>
+          <option value="yonetici">Mağaza Yöneticisi</option>
+        </select>
+
+        <label for="message">Kendinizden Bahsedin:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Kariyer hedefleriniz, deneyimleriniz..."></textarea>
+
+        <button type="submit">Başvuruyu Gönder</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

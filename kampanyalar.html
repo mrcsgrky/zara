@@ -1,57 +1,31 @@
-<!DOCTYPE html> <!-- Sayfanın HTML5 formatında olduğunu belirtir -->
-<html lang="tr"> <!-- Sayfanın dilinin Türkçe olduğunu belirtir -->
+<!DOCTYPE html>
+<html lang="tr">
 <head>
     <meta charset="UTF-8"> <!-- Sayfanın karakter setini UTF-8 olarak belirtir (Türkçe karakterler için önemli) -->
     <title>Kampanyalar</title> <!-- Sayfa başlığını "Kampanyalar" olarak ayarlar -->
-    <style>
-        body { 
-            font-family: Arial, sans-serif; /* Sayfa genelinde kullanılacak yazı tipini Arial olarak ayarlar */
-            background-color: #f5f5f5; /* Sayfanın arka plan rengini açık gri yapar */
-            color: #333; /* Yazı rengini koyu gri yapar */
-            margin: 0; /* Sayfa kenarındaki dış boşluğu sıfırlar */
-            padding: 0; /* Sayfa içindeki boşlukları sıfırlar */
-        }
-        header { 
-            background-color: #000; /* Başlık kısmının arka plan rengini siyah yapar */
-            color: white; /* Başlık kısmındaki yazının rengini beyaz yapar */
-            padding: 15px; /* Başlık kısmına iç boşluk ekler */
-            text-align: center; /* Başlık metnini ortalar */
-        }
-        nav { 
-            background-color: #222; /* Navigasyon çubuğunun arka plan rengini koyu gri yapar */
-            padding: 10px; /* Navigasyon çubuğuna iç boşluk ekler */
-            text-align: center; /* Navigasyon linklerini ortalar */
-        }
-        nav a { 
-            color: white; /* Navigasyon linklerinin rengini beyaz yapar */
-            text-decoration: none; /* Linklerin altını çizmez */
-            margin: 0 15px; /* Linkler arasına 15px boşluk bırakır */
-            font-weight: bold; /* Link metinlerini kalın yapar */
-        }
-        nav a:hover { 
-            text-decoration: underline; /* Linklere fare ile gelindiğinde altını çizer */
-            color: #f2f2f2; /* Linklerin rengini biraz daha açık beyaz yapar */
-        }
-        main { 
-            padding: 20px; /* Ana içerik kısmına iç boşluk ekler */
-        }
-    </style>
+    <link rel="stylesheet" href="styles/style.css"> <!-- CSS dosyasına bağlantı -->
 </head>
-<body>
-    <header><h1>Kampanyalar</h1></header> <!-- Sayfa başlığını "Kampanyalar" olarak ayarlar -->
-    <nav>
-        <a href="index.html">Anasayfa</a> <!-- Anasayfa linki -->
-        <a href="hakkimizda.html">Hakkımızda</a> <!-- Hakkımızda sayfasına yönlendiren link -->
-        <a href="urunler.html">Ürünler</a> <!-- Ürünler sayfasına yönlendiren link -->
-        <a href="kampanyalar.html">Kampanyalar</a> <!-- Bu sayfa, kampanyalar sayfasına yönlendirir -->
-        <a href="magazalar.html">Mağazalar</a> <!-- Mağazalar sayfasına yönlendiren link -->
-        <a href="iletisim.html">İletişim</a> <!-- İletişim sayfasına yönlendiren link -->
+<body class="kampanyalar_body"> <!-- Kampanyalar sayfasına özel body sınıfı -->
+    <header class="kampanyalar_header"> <!-- Kampanyalar sayfasına özel header -->
+        <h1>Kampanyalar</h1>
+    </header>
+    <nav class="kampanyalar_nav"> <!-- Kampanyalar sayfasına özel nav -->
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="kampanyalar.html">Kampanyalar</a>
+        <a href="magazalar.html">Mağazalar</a>
+        <a href="iletisim.html">İletişim</a>
+        <a href="memnuniyet.html">Memnuniyet</a>
+        <a href="canlidestek.html">Canlı Destek</a>
+        <a href="bizimlecalismak.html">Bizimle Çalışmak</a>
+        <a href="erkek.html">Erkek</a>
+        <a href="kadin.html">Kadın</a>
     </nav>
-    <main>
-        <ul> <!-- Kampanyaların liste şeklinde sunulduğu alan -->
-            <li>İkinci ürüne %50 indirim</li> <!-- İlk kampanya maddesi -->
-            <li>500 TL üzeri alışverişlerde kargo bedava</li> <!-- İkinci kampanya maddesi -->
-            <li>Outlet kategorisinde ekstra %20</li> <!-- Üçüncü kampanya maddesi -->
+    <main class="kampanyalar_main"> <!-- Kampanyalar sayfasına özel main içerik -->
+        <ul>
+            <li>İkinci ürüne %50 indirim</li>
+            <li>500 TL üzeri alışverişlerde kargo bedava</li>
+            <li>Outlet kategorisinde ekstra %20</li>
         </ul>
     </main>
 </body>

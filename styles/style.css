@@ -1,0 +1,992 @@
+.izimlecalismak_body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Başlık */
+  .bizimlecalismak_header {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  /* Navigasyon */
+  .bizimlecalismak_nav {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .bizimlecalismak_nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  .bizimlecalismak_nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Ana içerik */
+  .bizimlecalismak_main {
+    padding: 20px;
+  }
+  
+  /* Form kutusu */
+  .bizimlecalismak_container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .bizimlecalismak_container h2 {
+    color: #333;
+  }
+  
+  .bizimlecalismak_container p {
+    color: #555;
+  }
+  
+  /* Form elemanları */
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .canlidestek_button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .canlidestek_button:hover {
+    background-color: #0056b3;
+  }
+  
+  .canlidestek_chatBox {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border: 1px solid #ccc;
+    display: none; /* Başlangıçta gizli */
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .canlidestek_chatHeader {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+  }
+  
+  .canlidestek_closeBtn {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .canlidestek_chatMessages {
+    overflow-y: auto;
+    max-height: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .canlidestek_chatInput input {
+    width: 80%;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .canlidestek_chatInput button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .canlidestek_chatInput button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #f2f2f2;
+}
+
+/* Erkek sayfası için özel stil */
+.erkek_body {
+    background-color: #dcdcdc; /* Erkek sayfası için arka plan rengi */
+}
+
+.erkek_header {
+    background-color: #0056b3; /* Erkek sayfası için özel başlık rengi */
+}
+
+.erkek_nav a {
+    color: #0056b3; /* Erkek sayfasındaki bağlantı rengi */
+}
+
+.erkek_nav a:hover {
+    color: #003d7a; /* Erkek sayfası için hover rengi */
+}
+
+.erkek_nav .active_nav {
+    color: red; /* Aktif erkek sayfası bağlantısı rengi */
+}
+
+/* Erkek sayfası için ana içerik */
+.erkek_main {
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.product-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.product-container:hover .product-info {
+    bottom: 0;
+}
+
+.product-info h3, .product-info p {
+    margin: 5px 0;
+}
+
+table th {
+    display: none;
+}
+
+/* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  nav {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hakkımızda sayfasına özel stil */
+  .hakkimizda_body {
+    background-color: #e0e0e0; /* Hakkımızda sayfası için arka plan rengi */
+  }
+  
+  .hakkimizda_header {
+    background-color: #000000; /* Hakkımızda sayfası için başlık rengi */
+  }
+  
+  .hakkimizda_nav a {
+    color: #ffffff; /* Hakkımızda sayfasındaki bağlantı rengi */
+  }
+  
+  .hakkimizda_nav a:hover {
+    color: #e0e0e0; /* Hakkımızda sayfası için hover rengi */
+  }
+  
+  .hakkimizda_nav .active_nav {
+    color: rgb(255, 255, 255); /* Aktif hakkımızda sayfası bağlantısı rengi */
+  }
+  
+  /* Hakkımızda sayfası için ana içerik */
+  .hakkimizda_main {
+    padding: 20px;
+  }
+  
+  .veri {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    margin: auto;
+  }
+  
+  .veri p {
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+  }
+  
+  .product-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .product-info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: bottom 0.3s ease-in-out;
+  }
+  
+  .product-container:hover .product-info {
+    bottom: 0;
+  }
+  
+  .product-info h3, .product-info p {
+    margin: 5px 0;
+  }
+  
+  table th {
+    display: none;
+  }
+  
+  /* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  nav {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* İletişim sayfasına özel stil */
+  .iletisim_body {
+    background-color: #e0e0e0; /* İletişim sayfası için arka plan rengi */
+  }
+  
+  .iletisim_header {
+    background-color: #000000; /* İletişim sayfası için başlık rengi */
+  }
+  
+  .iletisim_nav a {
+    color: #000000; /* İletişim sayfasındaki bağlantı rengi */
+  }
+  
+  .iletisim_nav a:hover {
+    color: #e0e0e0; /* İletişim sayfası için hover rengi */
+  }
+  
+  .iletisim_nav .active_nav {
+    color: rgb(255, 255, 255); /* Aktif iletişim sayfası bağlantısı rengi */
+  }
+  
+  /* İletişim sayfası için ana içerik */
+  .iletisim_main {
+    padding: 20px;
+  }
+  
+  .iletisim_bilgi {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .iletisim_bilgi h2 {
+    color: #333; /* İletişim başlıklarının rengini koyu gri yapar */
+  }
+  
+  .iletisim_bilgi p {
+    margin: 10px 0; /* Paragraflar arasına 10px boşluk bırakır */
+  }
+  
+  a {
+    color: #000000; /* Linklerin rengini iletişim sayfası için belirler */
+  }
+  
+  a:hover {
+    color: #e0e0e0; /* Linklere fare ile gelindiğinde renk değişikliği */
+  }
+  
+  /* Sayfa genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  nav {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Anasayfa'ya özel stil */
+  .index_body {
+    background-color: #e0e0e0; /* Anasayfa için arka plan rengi */
+  }
+  
+  .index_header {
+    background-color: #000000; /* Başlık için renk */
+  }
+  
+  .index_nav {
+    background-color: #222; /* Navigasyon menüsü rengi */
+  }
+  
+  .index_nav a {
+    color: white; /* Anasayfa bağlantılarının rengi */
+  }
+  
+  .index_nav a:hover {
+    color: #e0e0e0; /* Hover rengi */
+  }
+  
+  .index_nav .active_nav {
+    color: rgb(255, 255, 255); /* Aktif Anasayfa bağlantısı */
+  }
+  
+  /* Anasayfa için içerik */
+  .index_main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 200px;
+    margin-top: 20px;
+  }
+  
+/* Sayfa genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #f2f2f2;
+}
+
+/* Kadın sayfasına özel stil */
+.kadin_body {
+    background-color: #e0e0e0;
+}
+
+.kadin_header {
+    background-color: #000000;
+}
+
+.kadin_nav {
+    background-color: #222;
+}
+
+.kadin_nav a {
+    color: white;
+}
+
+.kadin_nav a:hover {
+    color: #e0e0e0;
+}
+
+/* Kadın ürünleri içerikleri */
+.kadin_main {
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.product-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.product-container:hover .product-info {
+    bottom: 0;
+}
+
+.product-info h3, .product-info p {
+    margin: 5px 0;
+}
+
+/* Tablo başlıklarını gizle */
+table th {
+    display: none;
+}
+
+/* Sayfa genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #f2f2f2;
+}
+
+/* Erkek sayfasına özel stil */
+.erkek_body {
+    background-color: #e0e0e0;
+}
+
+.erkek_header {
+    background-color: #000000;
+}
+
+.erkek_nav {
+    background-color: #222;
+}
+
+.erkek_nav a {
+    color: white;
+}
+
+.erkek_nav a:hover {
+    color: #e0e0e0;
+}
+
+/* Erkek ürünleri içerikleri */
+.erkek_main {
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.product-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.product-container:hover .product-info {
+    bottom: 0;
+}
+
+.product-info h3, .product-info p {
+    margin: 5px 0;
+}
+
+/* Tablo başlıklarını gizle */
+table th {
+    display: none;
+}
+
+/* Sayfa genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #f2f2f2;
+}
+
+/* Kampanyalar sayfasına özel stil */
+.kampanyalar_body {
+    background-color: #e0e0e0;
+}
+
+.kampanyalar_header {
+    background-color: #000000;
+}
+
+.kampanyalar_nav {
+    background-color: #222;
+}
+
+.kampanyalar_nav a {
+    color: white;
+}
+
+.kampanyalar_nav a:hover {
+    color: #e0e0e0;
+}
+
+/* Kampanyalar sayfası içerik stili */
+.kampanyalar_main {
+    padding: 20px;
+    text-align: center;
+}
+
+.kampanyalar_main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.kampanyalar_main li {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Sayfa genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #f2f2f2;
+}
+
+/* Mağazalar sayfasına özel stil */
+.magazalar_body {
+    background-color: #e0e0e0;
+}
+
+.magazalar_header {
+    background-color: #000000;
+}
+
+.magazalar_nav {
+    background-color: #222;
+}
+
+.magazalar_nav a {
+    color: white;
+}
+
+.magazalar_nav a:hover {
+    color: #e0e0e0;
+}
+
+/* Mağazalar sayfası içerik stili */
+.magazalar_main {
+    padding: 20px;
+    text-align: center;
+}
+
+.magazalar_main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.magazalar_main li {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.konum {
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Sayfa genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Memnuniyet sayfasına özel stil */
+.memnuniyet_body {
+    background-color: #e0e0e0;
+}
+
+.memnuniyet_header {
+    background-color: #000000;
+}
+
+.memnuniyet_nav {
+    background-color: #222;
+}
+
+.memnuniyet_nav a {
+    color: white;
+}
+
+.memnuniyet_nav a:hover {
+    color: #e0e0e0;
+}
+
+/* Memnuniyet sayfası içerik stili */
+.memnuniyet_main {
+    padding: 20px;
+    text-align: center;
+}
+
+.memnuniyet_main .veri {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    margin: auto;
+}
+
+.memnuniyet_main .veri p {
+    margin-bottom: 10px;
+}

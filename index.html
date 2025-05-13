@@ -3,70 +3,27 @@
 <head>
   <meta charset="UTF-8"> <!-- Sayfa karakter setini UTF-8 olarak belirler. Türkçe karakterler düzgün görüntülenir. -->
   <title>ZARA - Anasayfa</title> <!-- Sayfanın başlık kısmı, tarayıcı sekmesinde görünen metin. -->
-  <style>
-    /* Sayfa genel stil ayarları */
-    body { 
-      font-family: Arial, sans-serif; /* Sayfanın fontunu Arial yapar. */
-      background-color: #f5f5f5; /* Arka plan rengini açık gri yapar. */
-      margin: 0; /* Sayfa kenarındaki boşluğu sıfırlar. */
-    }
-
-    /* Başlık kısmının stil ayarları */
-    header { 
-      background-color: #000; /* Arka plan rengini siyah yapar. */
-      color: white; /* Yazı rengini beyaz yapar. */
-      text-align: center; /* Başlığı ortalar. */
-      padding: 15px; /* Başlığın etrafına 15px iç boşluk ekler. */
-    }
-
-    /* Navigasyon menüsünün stil ayarları */
-    nav { 
-      background-color: #222; /* Arka plan rengini koyu gri yapar. */
-      text-align: center; /* Bağlantıları yatayda ortalar. */
-      padding: 10px; /* Menüye 10px iç boşluk ekler. */
-    }
-
-    /* Navigasyon bağlantılarının stil ayarları */
-    nav a { 
-      color: white; /* Bağlantı rengini beyaz yapar. */
-      text-decoration: none; /* Bağlantı altını çizmeyi engeller. */
-      margin: 0 15px; /* Bağlantılar arasına yatayda 15px boşluk ekler. */
-      font-weight: bold; /* Yazıyı kalın yapar. */
-    }
-
-    /* Bağlantı üzerine gelindiğinde alt çizgi ekler */
-    nav a:hover { 
-      text-decoration: underline; /* Bağlantı üzerine gelindiğinde altını çizer. */
-    }
-
-    /* Ana içerik kısmının stil ayarları */
-    main { 
-      padding: 20px; /* Ana içeriğe 20px iç boşluk ekler. */
-      text-align: center; /* İçeriği ortalar. */
-    }
-
-    /* Görsellerin stil ayarları */
-    img { 
-      max-width: 200px; /* Görselin genişliğini 200px'e kısıtlar. */
-      margin-top: 20px; /* Görselin üst kısmına 20px boşluk ekler. */
-    }
-  </style>
+  <link rel="stylesheet" href="styles/style.css"> <!-- CSS dosyasına bağlantı -->
 </head>
-<body>
-  <header>
+<body class="index_body"> <!-- Anasayfa için özel body sınıfı -->
+  <header class="index_header"> <!-- Anasayfa için özel header -->
     <h1>ZARA'ya Hoş Geldiniz</h1> <!-- Sayfanın ana başlığını ekler. -->
   </header>
-  <nav>
-    <a href="index.html">Anasayfa</a> <!-- Anasayfaya bağlantı verir. -->
-    <a href="hakkimizda.html">Hakkımızda</a> <!-- Hakkında sayfasına bağlantı verir. -->
-    <a href="urunler.html">Ürünler</a> <!-- Ürünler sayfasına bağlantı verir. -->
-    <a href="kampanyalar.html">Kampanyalar</a> <!-- Kampanyalar sayfasına bağlantı verir. -->
-    <a href="magazalar.html">Mağazalar</a> <!-- Mağazalar sayfasına bağlantı verir. -->
-    <a href="iletisim.html">İletişim</a> <!-- İletişim sayfasına bağlantı verir. -->
+  <nav class="index_nav"> <!-- Anasayfa için özel nav -->
+    <a href="index.html" class="active_nav">Anasayfa</a> <!-- Aktif Anasayfa bağlantısı -->
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="kampanyalar.html">Kampanyalar</a>
+    <a href="magazalar.html">Mağazalar</a>
+    <a href="iletisim.html">İletişim</a>
+    <a href="memnuniyet.html">Memnuniyet</a>
+    <a href="canlidestek.html">Canlı Destek</a>
+    <a href="bizimlecalismak.html">Bizimle Çalışmak</a>
+    <a href="erkek.html">Erkek</a>
+    <a href="kadin.html">Kadın</a>
   </nav>
-  <main>
-    <p>Moda dünyasının öncüsü ZARA ile en güncel trendleri keşfedin.</p> <!-- Sayfa içeriği olarak tanıtıcı metin. -->
-    <img src="images/zara-logo.png" alt="ZARA Logosu"> <!-- ZARA logosunun görseli eklenir. -->
+  <main class="index_main"> <!-- Anasayfa için özel main içerik -->
+    <p>Moda dünyasının öncüsü ZARA ile en güncel trendleri keşfedin.</p>
+    <img src="images/zara-logo.png" alt="ZARA Logosu"> <!-- ZARA logosunun görseli -->
   </main>
 </body>
 </html>
